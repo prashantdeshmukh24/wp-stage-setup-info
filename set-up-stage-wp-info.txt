@@ -5,9 +5,9 @@ Creating a staging site manually involves duplicating your existing WordPress si
 
 Note: Before making any changes, it's a good practice to back up your website files and database.
 
-1) Create a subdomain or subdirectory (optional but recommended):
+1) Create a subdomain or subdirectory:
    - Log in to your hosting account or cPanel.
-   - Navigate to the "Subdomains" or "Addon Domains" section to create a subdomain like staging.yourwebsite.com or a subdirectory like yourwebsite.com/staging.
+   - Click on  to the "public_html"  to create a subdomain like staging.yourwebsite.com or a subdirectory like yourwebsite.com/staging.
 
 2)Copy Website Files:
    -Access your WordPress files via FTP (using software like FileZilla).
@@ -36,4 +36,3 @@ Note: Before making any changes, it's a good practice to back up your website fi
    - Install a plugin or use a robots.txt file to prevent search engines from indexing your staging site to avoid duplicate content issues.
 9) Test Changes:
    - Perform any updates, changes, or tests on the staging site without affecting the live site.
-
