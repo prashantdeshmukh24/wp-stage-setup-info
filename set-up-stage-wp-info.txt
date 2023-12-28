@@ -36,3 +36,4 @@ Note: Before making any changes, it's a good practice to back up your website fi
    - Install a plugin or use a robots.txt file to prevent search engines from indexing your staging site to avoid duplicate content issues.
 9) Test Changes:
    - Perform any updates, changes, or tests on the staging site without affecting the live site.
+
