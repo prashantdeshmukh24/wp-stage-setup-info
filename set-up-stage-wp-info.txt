@@ -1,0 +1,38 @@
+                              how to set up wordpress into staging site manually
+                              ================================================= 
+Introduction:- 
+Creating a staging site manually involves duplicating your existing WordPress site to a separate location where you can test changes, updates, or new designs without affecting your live site. Here are the steps to set up a staging site for WordPress:
+
+Note: Before making any changes, it's a good practice to back up your website files and database.
+
+1) Create a subdomain or subdirectory (optional but recommended):
+   - Log in to your hosting account or cPanel.
+   - Navigate to the "Subdomains" or "Addon Domains" section to create a subdomain like staging.yourwebsite.com or a subdirectory like yourwebsite.com/staging.
+
+2)Copy Website Files:
+   -Access your WordPress files via FTP (using software like FileZilla).
+   -Duplicate your WordPress installation directory (usually named public_html or www) to the subdomain/subdirectory you created earlier.
+
+3) Duplicate the Database:
+   - Access your hosting control panel and find the phpMyAdmin tool (or a similar database management tool).
+   - Locate your WordPress site’s database and export it to a file (usually in SQL format). You can do this by selecting the database, then clicking "Export."
+   - Create a new database for your staging site via your hosting control panel.
+   - Import the previously exported SQL file into this new database.
+
+4)Update Site URLs in the Database:
+   - After exporting your database, you may need to update URLs in the SQL file from http://yourwebsite.com to http://staging.yourwebsite.com or http://yourwebsite.com staging.
+   - Open the SQL file in a text editor, perform a search and replace for your website URLs, and save the changes.
+
+5)Update WordPress Configuration:
+   - In your staging site's duplicated WordPress directory, locate the wp-config.php file.
+   - Update the database details (database name, username, password) to match the new staging database you created earlier.
+6)Login and Permalink Structure Update:
+   - Access your staging site via the new URL (subdomain/subdirectory).
+   - Log in to the WordPress admin dashboard using your credentials.
+   - Go to Settings > Permalinks and click "Save Changes" to update the permalink structure.
+7) Check and Update Links & Images:
+   - Browse through your staging site and ensure that all links, images, and functionalities work as expected.
+8) Prevent Search Engine Indexing:
+   - Install a plugin or use a robots.txt file to prevent search engines from indexing your staging site to avoid duplicate content issues.
+9) Test Changes:
+   - Perform any updates, changes, or tests on the staging site without affecting the live site.
